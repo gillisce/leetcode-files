@@ -24,15 +24,15 @@ namespace leetcode.array_problems
                     }
                 }
             }
-            //return new int[]{};
-            return new ArgumentException("no solution exists.");
+            return new int[]{};
+            //return new ArgumentException("no solution exists.");
         }
 
         public int[] TwoSumV2(int[] nums, int target)
         {
             if (nums == null || nums.Length < 2)
             {
-                return new ArgumentException("no solution exists.");
+            return new int[]{};
             }
 
             var dic = new Dictionary<int, int>();
@@ -45,7 +45,7 @@ namespace leetcode.array_problems
                     dic.TryAdd(nums[i], i);
             }
 
-            return new ArgumentException("no solution exists.");
+            return new int[]{};
         }
     }
 }

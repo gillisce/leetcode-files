@@ -2,15 +2,23 @@
     class Program{
         static void Main(string[] args){
             Console.WriteLine("Hello World");
-        var pv = new leetcode.AmazonTestPrep.PrintVerticalWords();
-        var testCase = new List<string>(){
-            "HOW ARE YOU",
-            "TO BE OR NOT TO BE",
-            "CONTEST IS COMING",
-        };
-        foreach(var test in testCase){
-            var res = pv.PrintVertically(test);
-        }
+            var cd = new leetcode.array_problems.ContainsDuplicate();
+
+            // var result = cd.ContainsNearbyDuplicate(new int[]{1,0,1,1},1);
+            // var result2 = cd.ContainsNearbyDuplicate(new int[]{1,2,3,1,2,3}, 2);
+            var result = cd.ContainsNearbyAlmostDuplicate(new int[]{2147483647,-1,2147483647}, 1, 2147483647);
+            Console.WriteLine(result);
+            Console.ReadKey();
+         #region Old Test Cases   
+        // var pv = new leetcode.AmazonTestPrep.PrintVerticalWords();
+        // var testCase = new List<string>(){
+        //     "HOW ARE YOU",
+        //     "TO BE OR NOT TO BE",
+        //     "CONTEST IS COMING",
+        // };
+        // foreach(var test in testCase){
+        //     var res = pv.PrintVertically(test);
+        // }
 
         // var boldwords = new leetcode.AmazonTestPrep.BoldWords();
         // var testCases = new Dictionary<string, string[]>();
@@ -54,6 +62,11 @@
             // string test3 = "bbbb";
             // var res = test.LengthOfLongestSubstring(test3);
             // Console.WriteLine(res);
+            #endregion
         }
     }
 }
+
+// [2147483647,-1,2147483647]
+// 1
+// 2147483647
